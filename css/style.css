@@ -137,10 +137,11 @@ header .jum-content{
 /* Main */
 
 main{
-    margin: 120px 0;
+    margin: 120px 0 0 0;
 
 }
-section{
+
+main section, .last-section{
     margin: 100px 0;
 }
 
@@ -148,7 +149,7 @@ section{
     width: 60%;
     margin: 0 auto;
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 main section .invoicing{
@@ -170,9 +171,10 @@ main section .invoicing{
 .card-container{
     display: flex;
     justify-content: space-between;
+    /* min-height: 1000px; */
     /* debug */
-    background-color: cornflowerblue;
-    min-height: 900px;
+    /* background-color: cornflowerblue; */
+    
 }
 
 .card{
@@ -215,7 +217,7 @@ main .ci3{
     color: gray;
 }
 
-.special{
+.card-office-info .special{
     display: block;
     width: 100%;
     text-align: center;
@@ -241,7 +243,52 @@ main .ci3{
 }
 .bigger-section{
     width: 70%;
-    /* debug */
-    /* background-color: burlywood; */
 }
+
+.partner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner img{
+    float: left;
+    padding-right: 40px;
+    width: 65%;
+}
+
+.smaller-section{
+    width: 30%;
+    margin-top: 40px;
+}
+
+.btn.white{
+    background-color: white;
+}
+
+.black-border{
+    border: 1px solid black;
+}
+
+.tool{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    width: 100%;
+}
+
+.box{
+    width: calc(100% / 3 - 30px);
+    margin: 35px 15px 0 15px;
+    margin-bottom: 10px;
+}
+
+.box img{
+    width: 100%;
+}
+
+section .clients{
+    width: 45%;
+}
+
 
