@@ -8,9 +8,10 @@
 
 body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
+/* regole header */
 header ul{
     display: flex;
     justify-content: space-evenly;
@@ -24,7 +25,7 @@ header ul li{
 
 header a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 header img{
@@ -32,20 +33,26 @@ header img{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 40px;
 }
 h4{
-    font-size: 16px;
+    font-size: 25px;
+}
+h5{
+    font-size: 17px;
+}
+hr{
+    display: block;
+    margin:40px 0;
 }
 
-/* regole header */
 nav{
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    padding: 0 20px;
+    background-color: #fff;
+    padding: 0 10px;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -83,23 +90,26 @@ nav{
 
 
 .button-blue-1{
-    background-color: blue;
-    border: 1px solid blue;
+    background-color: #0606f8;
+    border: 1px solid #0404fa;
     color: white;
     padding: 5px 10px;
 }
 
 .button-blue-2{
-    background-color: blue;
-    border: 1px solid blue;
+    background-color: #0909fa;
+    border: 1px solid #0909f7;
     color: white;
     padding: 5px 10px;
+}
+.jumbotron-container div{
+    padding: 20px 0px;
 }
 
 
 .jumbotron-header{
     margin-top: 58px;
-    background-color: rgb(178, 196, 231);
+    background-color: #a3bcd3;
     height: 590px;
 }
 
@@ -110,7 +120,7 @@ nav{
 }
 
 .jumbotron-container h1{
-    font-size: 50px;
+    font-size: 65px;
     margin-bottom: 25px;
 }
 
@@ -120,13 +130,13 @@ header .jum-content{
 }
 
 .jumbotron-text{
-    width: 100%;
-    font-size: 40px;
+    width: 500px;
 }
+
 
 .jumbotron-text a{
     display: inline-block;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
  #arrow{
@@ -134,11 +144,27 @@ header .jum-content{
     margin-top: 90px;
    
 }
-/* Main */
+
+.ci1{
+    margin-bottom: 10px;
+}
+
+.ci2{
+    display: block;
+    margin-bottom: 40px;
+}
+
+.ci3{
+    margin-bottom: 25px ;
+}
+
+/*  regole main */
 
 main{
-    margin: 120px 0 0 0;
-
+    margin-top: 175px;
+    margin-bottom: 175px;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 main section, .last-section{
@@ -148,8 +174,6 @@ main section, .last-section{
 .container{
     width: 60%;
     margin: 0 auto;
-    /* debug */
-    /* border: 1px solid black; */
 }
 
 main section .invoicing{
@@ -171,7 +195,8 @@ main section .invoicing{
 .card-container{
     display: flex;
     justify-content: space-between;
-    /* min-height: 1000px; */
+    margin: 0 -15px;
+    min-height: 1000px; 
     /* debug */
     /* background-color: cornflowerblue; */
     
@@ -179,12 +204,11 @@ main section .invoicing{
 
 .card{
     width: calc(100% / 3 - 30px);
-    min-height: 100%;
     margin: 0 15px;
 }
 
 .card, .team{
-    border: 1px solid #5d5d5d;
+    border: 1px solid #585858;
 }
 
 .card span, .card a{
@@ -192,7 +216,7 @@ main section .invoicing{
 }
 
 .card-category, .bb1{
-    border-bottom: 1px solid #5d5d5d;
+    border-bottom: 1px solid #636262;
     text-align: center;
     padding: 5px 0;
 }
@@ -200,6 +224,7 @@ main section .invoicing{
 .card-office-info, .sub-section-1{
     padding: 20px 15px;
 }
+
 main .ci1{
     margin-bottom: 10px;
 }
@@ -210,11 +235,11 @@ main .ci2{
 }
 
 main .ci3{
-    margin-bottom: 25px ;
+    margin-bottom: 20px ;
 }
 
 .card-office-info .gray{
-    color: gray;
+    color: #696868;
 }
 
 .card-office-info .special{
@@ -222,6 +247,7 @@ main .ci3{
     width: 100%;
     text-align: center;
 }
+
 
 .card hr{
     display: block;
@@ -241,6 +267,7 @@ main .ci3{
     display: flex;
     justify-content: space-between;
 }
+
 .bigger-section{
     width: 70%;
 }
@@ -252,8 +279,9 @@ main .ci3{
 
 .partner img{
     float: left;
+    padding: 45px;
     padding-right: 40px;
-    width: 65%;
+    width: 70%;
 }
 
 .smaller-section{
@@ -262,11 +290,11 @@ main .ci3{
 }
 
 .btn.white{
-    background-color: white;
+    background-color: #fff;
 }
 
 .black-border{
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 .tool{
@@ -274,7 +302,6 @@ main .ci3{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -15px;
-    width: 100%;
 }
 
 .box{
@@ -287,8 +314,149 @@ main .ci3{
     width: 100%;
 }
 
-section .clients{
-    width: 45%;
+section .clients, .free-trial h3{
+    width: 40%;
 }
+
+.flex-multi-square{
+    display: flex;
+}
+.flex-multi-square .sponsor{
+    width: calc(100% / 3);
+}
+
+.flex-multi-square .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsor .square{
+    position: relative;
+    width: 50%;
+    height:calc(100vw / 6)
+    
+}
+
+.sponsor img{
+    width: 50%;
+}
+
+.sponsor.flex img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+}
+
+.flex-multi-square hr{
+    width: 100px;
+}
+
+.square-multi-middle span{
+    display: block;
+    margin: 40px 0 350px 0;
+}
+/* squares colors */
+    .one{
+        background-color: #64ce64;
+        border: 10px solid #9cfc9c;
+    }
+
+    .two{
+        background-color: #a02828;
+    }
+
+    .three{
+        background-color: #2478c2;
+    }
+
+    .four{
+        background-color:  #f80303;
+    }
+    .six{
+        background-color: #73a8d6;
+    }
+
+    .square-multi-middle{
+        background-color: #e7e5e5;
+        padding: 0px;
+        height: calc(100vw / 3);
+        overflow-y: auto;
+    }
+
+    .seven{
+        background-color: #010136;
+    }
+
+    .eight{
+        background-color: #f7f703;
+    }
+
+    .flex-square-dropbox{
+    background-color: #73a8d6;
+   }
+
+.flex-square-dropbox h3{
+    color:#862e2e;
+}
+
+.free-trial{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    border-bottom: 1px solid #000;
+}
+
+.faq.btop{
+    border-top: 1px solid #000;
+}
+
+.faq span{
+    display: block; 
+}
+
+.faq .fa-angle-down{
+    padding-right: 30px;
+}
+
+/* regole footer */
+footer{
+    background-color: #000;
+    color: #ffff;
+    height: 400px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+
+.footer-column ul{
+    margin: 30px 0 60px 0;
+}
+
+.footer- li{
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+#language{
+    border-top: 1px solid #ffff;
+    padding: 30px 0;
+}
+
+
+
 
 
